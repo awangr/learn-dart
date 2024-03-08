@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learn_dart/data/dart/condition_and_loops/condition.dart';
-import 'package:learn_dart/data/dart/condition_and_loops/ternary_oprator.dart';
+import 'package:learn_dart/data/dart/condition/condition.dart';
+import 'package:learn_dart/data/dart/condition/ternary_oprator.dart';
+import 'package:learn_dart/data/dart/loops/loops.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,7 +13,7 @@ class HomePage extends StatelessWidget {
         child: ElevatedButton(
             onPressed: () {
               //your dart
-              Ternary.ternary();
+              Loops.doWhile();
             },
             child: Text('Button')),
       ),
