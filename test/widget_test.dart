@@ -1,30 +1,55 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-
-import 'package:learn_dart/main.dart';
+// INI ADALAH LATIHAN
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  //1.cetakNama();
+  //2.bilanganGenap(10, 30);
+  //3.salam('john');
+  // add(10, 20);
+  // var result = maxNumb(10, 5, 15);
+  // print('Angka terbesarnya adalah $result');
+  print(boolean(5));
+}
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+// 1.
+void cetakNama() {
+  String name = 'Sahwan Rhomadon';
+  print('My Name is $name');
+}
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+// 2.
+void bilanganGenap(int start, int end) {
+  for (int i = start; i <= end; i++) {
+    if (i % 2 == 0) {
+      print(i);
+    }
+  }
+}
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
-  });
+// 3.
+void salam(String salam) {
+  print('Welcome $salam');
+}
+
+// 8.
+void add(int start, int end) {
+  print('Total awal adalah $start, Total akhir adalah $end');
+}
+
+// 9.
+maxNumb(int a, b, c) {
+  int max = c;
+  if (a > max) {
+    max = a;
+  }
+  if (b > max) {
+    max = b;
+  }
+  if (b < max) {
+    max = c;
+  }
+  return max;
+}
+
+bool boolean(int number) {
+  return number % 2 == 0;
 }
