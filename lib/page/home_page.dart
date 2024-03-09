@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_dart/data/dart/condition/condition.dart';
 import 'package:learn_dart/data/dart/condition/ternary_oprator.dart';
+import 'package:learn_dart/data/dart/function/functions.dart';
 import 'package:learn_dart/data/dart/loops/loops.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,8 +13,8 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
             onPressed: () {
-              //your dart
-              Loops.doWhile();
+              //your function dart to call
+              Functions.mathRandom();
             },
             child: Text('Button')),
       ),
