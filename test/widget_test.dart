@@ -50,6 +50,11 @@ maxNumb(int a, b, c) {
   return max;
 }
 
+//10.
 bool boolean(int number) {
   return number % 2 == 0;
 }
+
+//11. membuat sebuah function yang nilai isActivenya true semua
+
+createUsers(String nama, String usia, {bool isActive = true}) {}
