@@ -8,6 +8,7 @@ import 'package:learn_dart/data/dart/loops/loops.dart';
 import 'package:learn_dart/data/dart/null_safety/null_safety.dart';
 import 'package:learn_dart/data/dart/oop/constructor.dart';
 import 'package:learn_dart/data/dart/oop/object.dart';
+import 'package:learn_dart/data/dart/useful_information/datetime.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -23,8 +24,8 @@ class HomePage extends StatelessWidget {
               // objectDart.excCars();
               // NullSfety nullSfety = NullSfety();
               // nullSfety.voidNullSafe();
-              Data data = Data();
-              data.myMethod();
+              DateTimeClass data = DateTimeClass();
+              data.calculateBirthday();
             },
             child: Text('Button')),
       ),
