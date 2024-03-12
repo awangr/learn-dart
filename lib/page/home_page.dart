@@ -5,6 +5,7 @@ import 'package:learn_dart/data/dart/condition/condition.dart';
 import 'package:learn_dart/data/dart/condition/ternary_oprator.dart';
 import 'package:learn_dart/data/dart/function/functions.dart';
 import 'package:learn_dart/data/dart/loops/loops.dart';
+import 'package:learn_dart/data/dart/null_safety/null_safety.dart';
 import 'package:learn_dart/data/dart/oop/constructor.dart';
 import 'package:learn_dart/data/dart/oop/object.dart';
 
@@ -20,6 +21,10 @@ class HomePage extends StatelessWidget {
               //your function dart to call
               // ObjectDart objectDart = ObjectDart();
               // objectDart.excCars();
+              // NullSfety nullSfety = NullSfety();
+              // nullSfety.voidNullSafe();
+              Data data = Data();
+              data.myMethod();
             },
             child: Text('Button')),
       ),
